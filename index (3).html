@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Viewer</title>
+</head>
+<body>
+
+<h1>Media Viewer</h1>
+
+<div id="mediaContainer"></div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Path to the media_files directory
+        const mediaPath = "media_files/";
+
+        // Array of file names in the media_files directory
+        const fileNames = [
+            "mona_lisa.PNG",
+            "overlay_0.jpeg",
+			"overlay_1.jpeg",
+			"overlay_4.jpeg",
+			"overlay_9.jpeg",
+			"overlay_19.jpeg",
+			"overlay_21.jpeg",
+            "pampers_how_it_works.mp4",
+            "pampers_sephora_mix_end_gap_start.mp4",
+			"pampers_sephora_mix_end_start.mp4",
+			"pampers_sephora_mix_start_end.mp4",
+			"pampers_sephora_mix_start_gap_end.mp4",
+			"pampers_the_diaper_stash.mp4",
+			"pampers-how-it-works_trim.mp4",
+			"pampers-the-diaper-stash_trim.mp4",
+			"sephora_filling_in_gray_brows.mp4",
+			"sephora_filling_in_gray_brows_end.mp4",
+			"sephora_filling_in_gray_brows_start.mp4",
+			"sephora_skincare_solutions.mp4",
+			"sephora-filling-in-gray-brows_trim.mp4"
+            // Add more file names as needed
+        ];
+
+        // Function to create and append an image or video element to the container
+        function createMediaElement(fileName) {
+            const extension = fileName.split('.').pop().toLowerCase();
+            const mediaElement = extension === 'mp4'
+                ? document.createElement("video")
+                : document.createElement("img");
+
+            mediaElement.src = mediaPath + fileName;
+            mediaElement.controls = true;
+            mediaElement.style.width = "100%";
+
+            const mediaContainer = document.getElementById("mediaContainer");
+            mediaContainer.appendChild(mediaElement);
+        }
+
+        // Load each file in the fileNames array
+        fileNames.forEach(createMediaElement);
+    });
+</script>
+
+</body>
+</html>
