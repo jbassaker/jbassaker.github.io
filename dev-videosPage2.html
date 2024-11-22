@@ -1,97 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image and Video Example</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Video Gallery</title>
+	<style>
+		body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: #444;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #555;
+            margin: 20px 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .button-container {
+            margin: 20px 0;
+        }
+
+        .button-container a {
+            display: inline-block;
+            padding: 12px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: #0056b3;
+        }
+	</style>
 </head>
 <body>
 
-	<video width="640" height="360" controls>
-		<source src="devVideos/gilletteactor1.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
+<div class="container">
+	<h1>Video Gallery</h1>
 
-	<video width="640" height="360" controls>
-		<source src="devVideos/garnier2.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
+	<div class="video-grid">
+		<video controls>
+			<source src="devVideos/gilletteactor1.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="devVideos/garnier2.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="devVideos/como.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="devVideos/olia.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="devVideos/airpods.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="devVideos/garnierarabic.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="devVideos/voices.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="devVideos/copyvoices.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="devVideos/lash.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="devVideos/applee.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="devVideos/acidgarnier.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="devVideos/shadowpalette.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="devVideos/garniersuper.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="devVideos/garniervitaminc.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="devVideos/garnier.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="devVideos/voiceswhite.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="devVideos/gilletteactor2.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+	</div>
 
-	<video width="640" height="360" controls>
-		<source src="devVideos/como.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="devVideos/olia.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="devVideos/airpods.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="devVideos/garnierarabic.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="devVideos/voices.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="devVideos/copyvoices.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="devVideos/lash.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="devVideos/applee.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="devVideos/acidgarnier.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="devVideos/shadowpalette.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="devVideos/garniersuper.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="devVideos/garniervitaminc.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="devVideos/garnier.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="devVideos/voiceswhite.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="devVideos/gilletteactor2.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
+	<div class="button-container">
+		<a href="dev-videos.html">Go to Page 1</a>
+	</div>
+</div>
 
 </body>
 </html>
-
