@@ -3,14 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Quality Team Website - Images</title>
+	<title>Thunderbolts Quality Team Website</title>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-	<!-- Import Font Awesome Icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<style>
 		/* General styling */
 		body {
-			font-family: 'Poppins', sans-serif;
+			font-family: 'Roboto', sans-serif;
 			margin: 0;
 			padding: 0;
 			background-color: #f4f4f9;
@@ -18,7 +17,7 @@
 		}
 
 		h1 {
-			font-size: 2.5rem;
+			font-size: 2rem;
 			font-weight: 600;
 			color: #444;
 			text-align: center;
@@ -27,13 +26,13 @@
 
 		h2 {
 			text-align: center;
-			font-size: 1.5rem;
+			font-size: 1.3rem;
 			font-weight: 400;
 			color: #555;
 			margin: 20px 0;
 		}
 
-		/* Grid layout for images */
+		/* Grid layout for images & videos */
 		.image-container {
 			display: grid;
 			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -56,13 +55,35 @@
 			box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 		}
 
+		.video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .video-container {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        video, iframe {
+            width: 100%;
+            display: block;
+            border-bottom: 2px solid #ddd;
+        }
+
 		/* Sidebar styling */
 		.sidebar {
 			width: 170px;
-			background: rgba(255, 255, 255, 0.1); /* Glass effect */
+			background: rgba(255, 255, 255, 0.1);
 			backdrop-filter: blur(10px);
 			border: 1px solid rgba(255, 255, 255, 0.3);
-			color: #333; /* Changed to darker color for better visibility */
+			color: #333;
 			position: fixed;
 			height: 100%;
 			display: flex;
@@ -73,7 +94,7 @@
 
 		.sidebar a {
 			text-decoration: none;
-			color: #444; /* Adjusted to darker shade for contrast */
+			color: #444;
 			display: flex;
 			align-items: center;
 			gap: 10px;
@@ -83,7 +104,7 @@
 			font-weight: 500;
 			font-size: 0.9rem;
 			transition: background-color 0.3s ease, transform 0.3s ease;
-			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for clarity */
+			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 		}
 
 		.sidebar a:hover {
@@ -91,24 +112,21 @@
 			transform: scale(1.05);
 		}
 
-		/* Separator styling */
 		.separator {
 			margin: 20px 0;
-			border-top: 1px solid rgba(255, 255, 255, 0.2); /* Light separator line */
+			border-top: 1px solid rgba(99, 91, 91, 0.2);
 		}
 
-		/* Adjust spacing for the sections */
 		.nav-section {
-			margin-bottom: 10px; /* Ensure spacing before the separator */
+			margin-bottom: 10px;
 		}
 
 		.menu-section {
-			margin-top: 10px; /* Ensure spacing after the separator */
+			margin-top: 10px;
 		}
 
-		/* Main content styling */
 		.main-content {
-			margin-left: 190px; /* Leave space for the sidebar */
+			margin-left: 190px;
 			padding: 20px;
 			width: calc(100% - 240px);
 		}
@@ -143,13 +161,13 @@
 </head>
 <body>
 	<div class="sidebar">
-		<!-- Navigation Section -->
+
 		<div class="nav-section">
 			<a href="index.html"><i class="fas fa-arrow-left"></i> Back</a>
 			<a href="imagesPage2.html"><i class="fas fa-arrow-right"></i> Next</a>
 		</div>
 		<div class="separator"></div>
-		<!-- Menu Section -->
+
 		<div class="menu-section">
 			<a href="images.html"><i class="fas fa-images"></i> Images</a>
 			<a href="base-videos.html"><i class="fas fa-film"></i> Base Videos</a>
