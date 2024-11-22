@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Video Gallery</title>
+	<title>Video Showcase</title>
 	<style>
 		body {
             font-family: Arial, sans-serif;
@@ -12,7 +12,6 @@
             background-color: #f4f4f9;
             color: #333;
         }
-
         h1 {
             font-size: 2.5rem;
             font-weight: 300;
@@ -28,57 +27,48 @@
             color: #555;
             margin: 20px 0;
         }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
         .video-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            width: 100%;
-            margin: 20px 0;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
         }
-
-        video {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
+        .video-container {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
-        .button-container {
+        video {
+            width: 100%;
+            display: block;
+            border-bottom: 2px solid #ddd;
+        }
+        .next-page {
+            text-align: center;
             margin: 20px 0;
         }
-
-        .button-container a {
-            display: inline-block;
-            padding: 12px 20px;
-            font-size: 18px;
-            font-weight: bold;
-            color: white;
+        .next-page button {
             background-color: #007BFF;
-            text-decoration: none;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
             border-radius: 5px;
+            cursor: pointer;
             transition: background-color 0.3s ease;
         }
-
-        .button-container a:hover {
+        .next-page button:hover {
             background-color: #0056b3;
         }
 	</style>
 </head>
 <body>
 
-<div class="container">
-	<h1>Video Gallery</h1>
-
+	<h1>Thunderbolts Quality Team Website</h1>
+	<h2>Video Showcase</h2>
 	<div class="video-grid">
 		<video controls>
 			<source src="devVideos/gilletteactor1.mp4" type="video/mp4">
@@ -153,7 +143,6 @@
 	<div class="button-container">
 		<a href="dev-videos.html">Go to Page 1</a>
 	</div>
-</div>
 
 </body>
 </html>
