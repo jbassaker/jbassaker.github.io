@@ -58,11 +58,11 @@
 
 		/* Sidebar styling */
 		.sidebar {
-			width: 220px;
+			width: 150px;
 			background: rgba(255, 255, 255, 0.1); /* Glass effect */
 			backdrop-filter: blur(10px);
 			border: 1px solid rgba(255, 255, 255, 0.3);
-			color: white;
+			color: #333; /* Changed to darker color for better visibility */
 			position: fixed;
 			height: 100%;
 			display: flex;
@@ -73,16 +73,17 @@
 
 		.sidebar a {
 			text-decoration: none;
-			color: white;
+			color: #444; /* Adjusted to darker shade for contrast */
 			display: flex;
 			align-items: center;
-			gap: 10px; /* Space for icons */
+			gap: 10px;
 			padding: 10px;
 			margin: 5px 10px;
 			border-radius: 5px;
 			font-weight: 500;
 			font-size: 1rem;
 			transition: background-color 0.3s ease, transform 0.3s ease;
+			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for clarity */
 		}
 
 		.sidebar a:hover {
@@ -92,7 +93,7 @@
 
 		/* Main content styling */
 		.main-content {
-			margin-left: 240px; /* Leave space for the sidebar */
+			margin-left: 170px; /* Leave space for the sidebar */
 			padding: 20px;
 			width: calc(100% - 240px);
 		}
