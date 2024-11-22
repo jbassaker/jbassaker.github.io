@@ -3,162 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image and Video Example</title>
+    <title>Base Videos</title>
+	<style>
+		body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: #444;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #555;
+            margin: 20px 0;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .video-container {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        video, iframe {
+            width: 100%;
+            display: block;
+            border-bottom: 2px solid #ddd;
+        }
+        /* Button styling */
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .button-container a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+
+        .button-container a:active {
+            transform: translateY(0);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+	</style>
 </head>
 <body>
 
-	<!-- New Videos -->
-	<video width="640" height="360" controls>
-		<source src="baseVideos/scola3.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
+<div class="container">
+	<h1>Base Videos</h1>
 
-	<video width="640" height="360" controls>
-		<source src="baseVideos/vinylnude3.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="baseVideos/vinylnude2.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="baseVideos/vinylnude1.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="baseVideos/elseve1.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="baseVideos/elseve2.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="baseVideos/elseve3.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="baseVideos/elseve4.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<!-- Added nou1 to nou4 -->
-	<video width="640" height="360" controls>
-		<source src="baseVideos/nou1.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="baseVideos/nou2.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="baseVideos/nou3.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="baseVideos/nou4.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<!-- Added creme1 to creme3 -->
-	<video width="640" height="360" controls>
-		<source src="baseVideos/creme1.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="baseVideos/creme2.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="baseVideos/creme3.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<!-- Added corector1 to corector2 -->
-	<video width="640" height="360" controls>
-		<source src="baseVideos/corector1.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="baseVideos/corector2.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="baseVideos/ringlandscape.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="baseVideos/kerastasereel.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="baseVideos/potentialiste2.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="baseVideos/potentialiste3.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="baseVideos/potentialiste4.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="baseVideos/pampersbabies.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="baseVideos/pampersproduct1.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="baseVideos/curler.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="baseVideos/nivea_summer.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="baseVideos/s24ultrapeoplechess.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="baseVideos/samsungwatch6.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<video width="640" height="360" controls>
-		<source src="baseVideos/pampers.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/q3zqJs7JUCQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/FWQdPsA9twk?si=iJlJ9pEA8yAbwrxN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+	<div class="video-grid">
+		<video controls>
+			<source src="baseVideos/potentialiste1.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="baseVideos/eyeskybymaybelline.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="baseVideos/skybymaybelline.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="baseVideos/teddybymaybelline1.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="baseVideos/teddybymaybelline2.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="baseVideos/nyx1.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="baseVideos/nyx2.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="baseVideos/nyx3.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="baseVideos/nyx4.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="baseVideos/nyx5.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="baseVideos/nyx6.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="baseVideos/potentialiste3.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="baseVideos/potentialiste4.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="baseVideos/pampersbabies.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="baseVideos/pampersproduct1.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="baseVideos/curler.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="baseVideos/nivea_summer.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="baseVideos/s24ultrapeoplechess.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="baseVideos/samsungwatch6.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<video controls>
+			<source src="baseVideos/pampers.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<iframe
+				src="https://www.youtube.com/embed/q3zqJs7JUCQ"
+				frameborder="0"
+				allow="autoplay; encrypted-media"
+				allowfullscreen>
+		</iframe>
+		<iframe
+				src="https://www.youtube.com/embed/FWQdPsA9twk?si=iJlJ9pEA8yAbwrxN"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen>
+		</iframe>
+	</div>
+	<div class="button-container">
+		<a href="index.html">Go to Main</a>
+		<a href="base-videosPage2.html">Go to Page 2</a>
+	</div>
 </body>
 </html>
 
