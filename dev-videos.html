@@ -46,22 +46,33 @@
             display: block;
             border-bottom: 2px solid #ddd;
         }
-        .next-page {
+        /* Button styling */
+        .button-container {
             text-align: center;
             margin: 20px 0;
         }
-        .next-page button {
-            background-color: #007BFF;
-            color: white;
-            border: none;
+
+        .button-container a {
+            display: inline-block;
             padding: 10px 20px;
             font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            background-color: #007bff;
+            text-decoration: none;
             border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
-        .next-page button:hover {
+
+        .button-container a:hover {
             background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+
+        .button-container a:active {
+            transform: translateY(0);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
 	</style>
 </head>
