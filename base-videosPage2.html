@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Base Videos</title>
+	<title>Thunderbolts Quality Team Website</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<style>
-		body {
-            font-family: Arial, sans-serif;
+		/* General styling */
+        body {
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
             color: #333;
         }
+
         h1 {
-            font-size: 2.5rem;
-            font-weight: 300;
+            font-size: 2rem;
+            font-weight: 600;
             color: #444;
             text-align: center;
             margin: 20px 0;
@@ -22,11 +26,35 @@
 
         h2 {
             text-align: center;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 400;
             color: #555;
             margin: 20px 0;
         }
+
+        /* Grid layout for images & videos */
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
         .video-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -35,187 +63,271 @@
             max-width: 1200px;
             margin: auto;
         }
+
         .video-container {
             background: #fff;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
         video, iframe {
             width: 100%;
             display: block;
             border-bottom: 2px solid #ddd;
         }
-        /* Button styling */
-        .button-container {
-            text-align: center;
-            margin: 20px 0;
+
+        /* Sidebar styling */
+        .sidebar {
+            width: 170px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: #333;
+            position: fixed;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
         }
 
-        .button-container a {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 1rem;
-            font-weight: bold;
-            color: white;
-            background-color: #007bff;
+        .sidebar a {
             text-decoration: none;
+            color: #444;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            margin: 5px 10px;
             border-radius: 5px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            font-weight: 500;
+            font-size: 0.9rem;
             transition: background-color 0.3s ease, transform 0.3s ease;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
         }
 
-        .button-container a:hover {
-            background-color: #0056b3;
-            transform: translateY(-3px);
+        .sidebar a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
         }
 
-        .button-container a:active {
-            transform: translateY(0);
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        .separator {
+            margin: 20px 0;
+            border-top: 1px solid rgba(99, 91, 91, 0.2);
+        }
+
+        .nav-section {
+            margin-bottom: 10px;
+        }
+
+        .menu-section {
+            margin-top: 10px;
+        }
+
+        .main-content {
+            margin-left: 190px;
+            padding: 20px;
+            width: calc(100% - 240px);
+        }
+
+        /* Responsive Sidebar */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 150px; /* Adjusted for smaller screens */
+            }
+
+            .main-content {
+                margin-left: 170px; /* Adjusted to match sidebar width */
+                width: calc(100% - 170px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sidebar {
+                width: 130px; /* Reduced width for very small screens */
+            }
+
+            .sidebar a {
+                font-size: 0.8rem; /* Slightly smaller font for very small screens */
+            }
+
+            .main-content {
+                margin-left: 140px; /* Match sidebar width */
+                width: calc(100% - 140px);
+            }
         }
 	</style>
 </head>
 <body>
-	<h1>Thunderbolts Quality Team Website</h1>
-	<h2>Video Showcase</h2>
-	<div class="video-grid">
-		<div class="video-container">
-			<video controls>
-				<source src="baseVideos/nyx7.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
+	<div class="sidebar">
+
+		<div class="nav-section">
+			<a href="base-videos.html"><i class="fas fa-arrow-left"></i> Back</a>
+			<a href="base-videosPage3.html"><i class="fas fa-arrow-right"></i> Next</a>
 		</div>
-		<div class="video-container">
-			<video controls>
-				<source src="baseVideos/nyx8.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
-		</div>
-		<div class="video-container">
-			<video controls>
-				<source src="baseVideos/pilljoe1.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
-		</div>
-		<div class="video-container">
-			<video controls>
-				<source src="baseVideos/pilljoe2.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
-		</div>
-		<div class="video-container">
-			<video controls>
-				<source src="baseVideos/pilljoe3.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
-		</div>
-		<div class="video-container">
-			<video controls>
-				<source src="baseVideos/carols1.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
-		</div>
-		<div class="video-container">
-			<video controls>
-				<source src="baseVideos/carols2.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
-		</div>
-		<div class="video-container">
-			<video controls>
-				<source src="baseVideos/carols3.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
-		</div>
-		<div class="video-container">
-			<video controls>
-				<source src="baseVideos/carols4.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
-		</div>
-		<div class="video-container">
-			<video controls>
-				<source src="baseVideos/carols5.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
-		</div>
-		<div class="video-container">
-			<video controls>
-				<source src="baseVideos/carols6.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
-		</div>
-		<div class="video-container">
-			<video controls>
-				<source src="baseVideos/loreal1.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
-		</div>
-		<div class="video-container">
-			<video controls>
-				<source src="baseVideos/loreal2.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
-		</div>
-		<div class="video-container">
-			<video controls>
-				<source src="baseVideos/watchultra.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
-		</div>
-		<div class="video-container">
-			<video controls>
-				<source src="baseVideos/tv2.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
-		</div>
-		<div class="video-container">
-			<video controls>
-				<source src="baseVideos/tv.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
-		</div>
-		<div class="video-container">
-			<video controls>
-				<source src="baseVideos/samsungwatch7.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
-		</div>
-		<div class="video-container">
-			<video controls>
-				<source src="baseVideos/s24ultrapeoplechess.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
-		</div>
-		<div class="video-container">
-			<video controls>
-				<source src="baseVideos/samsungwatch6.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
-		</div>
-		<div class="video-container">
-			<video controls>
-				<source src="baseVideos/pampers.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
-		</div>
-		<div class="video-container">
-			<iframe
-					width="100%"
-					height="315"
-					src="https://www.youtube.com/embed/q3zqJs7JUCQ"
-					frameborder="0"
-					allow="autoplay; encrypted-media"
-					allowfullscreen>
-			</iframe>
+		<div class="separator"></div>
+
+		<div class="menu-section">
+			<a href="images.html"><i class="fas fa-images"></i> Images</a>
+			<a href="base-videos.html"><i class="fas fa-film"></i> Base Videos</a>
+			<a href="edited-videos.html"><i class="fas fa-edit"></i> Edited Videos</a>
+			<a href="dev-videos.html"><i class="fas fa-code"></i> Dev Videos</a>
+			<a href="music-videos.html"><i class="fas fa-music"></i> Music Videos</a>
 		</div>
 	</div>
+	<div class="main-content">
+		<h1>Thunderbolts Quality Team Website</h1>
+		<h2>Video Showcase</h2>
+		<div class="video-grid">
+			<div class="video-container">
+				<video controls>
+					<source src="baseVideos/nyx7.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
 
-	<div class="button-container">
-		<a href="index.html">Go to Main</a>
-		<a href="base-videos.html">Go to Page 1</a>
-		<a href="base-videosPage3.html">Go to Page 3</a>
+			<div class="video-container">
+				<video controls>
+					<source src="baseVideos/nyx8.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+
+			<div class="video-container">
+				<video controls>
+					<source src="baseVideos/pilljoe1.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+
+			<div class="video-container">
+				<video controls>
+					<source src="baseVideos/pilljoe2.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+
+			<div class="video-container">
+				<video controls>
+					<source src="baseVideos/pilljoe3.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+
+			<div class="video-container">
+				<video controls>
+					<source src="baseVideos/carols1.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+
+			<div class="video-container">
+				<video controls>
+					<source src="baseVideos/carols2.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+
+			<div class="video-container">
+				<video controls>
+					<source src="baseVideos/carols3.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+
+			<div class="video-container">
+				<video controls>
+					<source src="baseVideos/carols4.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+
+			<div class="video-container">
+				<video controls>
+					<source src="baseVideos/carols5.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+
+			<div class="video-container">
+				<video controls>
+					<source src="baseVideos/carols6.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+
+			<div class="video-container">
+				<video controls>
+					<source src="baseVideos/loreal1.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+
+			<div class="video-container">
+				<video controls>
+					<source src="baseVideos/loreal2.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+
+			<div class="video-container">
+				<video controls>
+					<source src="baseVideos/watchultra.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+
+			<div class="video-container">
+				<video controls>
+					<source src="baseVideos/tv2.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+
+			<div class="video-container">
+				<video controls>
+					<source src="baseVideos/tv.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+
+			<div class="video-container">
+				<video controls>
+					<source src="baseVideos/samsungwatch7.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+
+			<div class="video-container">
+				<video controls>
+					<source src="baseVideos/s24ultrapeoplechess.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+
+			<div class="video-container">
+				<video controls>
+					<source src="baseVideos/samsungwatch6.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+
+			<div class="video-container">
+				<video controls>
+					<source src="baseVideos/pampers.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+
+			<div class="video-container">
+				<iframe width="100%" height="315" src="https://www.youtube.com/embed/q3zqJs7JUCQ"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+				</iframe>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
