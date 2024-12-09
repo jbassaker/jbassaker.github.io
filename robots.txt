@@ -1,5 +1,2 @@
 User-agent: FADEL-bot
-Allow: /*
-
-User-agent: *
 Disallow: /*
