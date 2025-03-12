@@ -1,4 +1,4 @@
-User-agent: Fadel-bot
+User-agent: FADEL-CT
 Allow: /*
 
 User-agent: *
