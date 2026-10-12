@@ -27,9 +27,9 @@ ul.idx { max-width: 1280px; margin: 0 auto 30px; padding: 0 20px; line-height: 1
 </head>
 <body>
 <h1>NBA Vertical Social Edits</h1>
-<p class="sub">64 edits across 18 different NBA games. 54 generated, 10 real Bleacher Report edits.</p>
+<p class="sub">98 edits across 18 different NBA games. 54 generated, 44 real Bleacher Report edits.</p>
 <p class="note">Grouped by game. Green = generated from that game, so the expected match is known by construction. Amber = a real Bleacher Report edit; its overlap with our asset chunk is NOT verified and must be graded by hand.</p>
-<h2>Celtics vs Hornets (3)</h2>
+<h2>Celtics vs Hornets (4)</h2>
     <div class="video-grid">
         <div class="video-container">
             <video controls>
@@ -52,8 +52,15 @@ ul.idx { max-width: 1280px; margin: 0 auto 30px; padding: 0 20px; line-height: 1
             </video>
             <div class="caption"><span class="name">Celtics_vs_Hornets_20260304_720p__vcrop_lowbitrate.mp4</span>9:16 at 400 kbps<span class="tgt">expect: Celtics_vs_Hornets_20260304_00-02-00_00-06-00_720p.mp4  (5.0% of asset)</span></div>
         </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/XC_Celtics_vs_Hornets_20260304__outside_chunk.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">XC_Celtics_vs_Hornets_20260304__outside_chunk.mp4</span>same game and same source reel, but cut from 400-420s - OUTSIDE the 120-360s window the asset holds<span class="neg">expect:   (8.33% of asset)</span></div>
+        </div>
     </div>
-<h2>Grizzlies vs Hawks (3)</h2>
+<h2>Grizzlies vs Hawks (4)</h2>
     <div class="video-grid">
         <div class="video-container">
             <video controls>
@@ -76,8 +83,15 @@ ul.idx { max-width: 1280px; margin: 0 auto 30px; padding: 0 20px; line-height: 1
             </video>
             <div class="caption"><span class="name">Grizzlies_vs_Hawks_20261005_720p__comp_3clips.mp4</span>3-clip compilation, non-chronological<span class="tgt">expect: Grizzlies_vs_Hawks_20261005_00-02-00_00-06-00_720p.mp4  (4.17% of asset)</span></div>
         </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/XC_Grizzlies_vs_Hawks_20261005__outside_chunk.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">XC_Grizzlies_vs_Hawks_20261005__outside_chunk.mp4</span>same game and same source reel, but cut from 400-420s - OUTSIDE the 120-360s window the asset holds<span class="neg">expect:   (8.33% of asset)</span></div>
+        </div>
     </div>
-<h2>Heat vs Raptors (3)</h2>
+<h2>Heat vs Raptors (7)</h2>
     <div class="video-grid">
         <div class="video-container">
             <video controls>
@@ -99,6 +113,34 @@ ul.idx { max-width: 1280px; margin: 0 auto 30px; padding: 0 20px; line-height: 1
                 Your browser does not support the video tag.
             </video>
             <div class="caption"><span class="name">Heat_vs_Raptors_20261003_720p__vcrop_caption.mp4</span>9:16 + caption bar<span class="tgt">expect: Heat_vs_Raptors_20261003_00-02-00_00-06-00_720p.mp4  (2.5% of asset)</span></div>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/L_Heat_vs_Raptors_20261003_720p__control_16x9__20s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">L_Heat_vs_Raptors_20261003_720p__control_16x9__20s.mp4</span>duration sweep - 20s of a 240s asset (8.3% coverage), framing held at control_16x9<span class="tgt">expect: Heat_vs_Raptors_20261003_00-02-00_00-06-00_720p.mp4  (8.33% of asset)</span></div>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/L_Heat_vs_Raptors_20261003_720p__control_16x9__30s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">L_Heat_vs_Raptors_20261003_720p__control_16x9__30s.mp4</span>duration sweep - 30s of a 240s asset (12.5% coverage), framing held at control_16x9<span class="tgt">expect: Heat_vs_Raptors_20261003_00-02-00_00-06-00_720p.mp4  (12.5% of asset)</span></div>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/L_Heat_vs_Raptors_20261003_720p__control_16x9__45s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">L_Heat_vs_Raptors_20261003_720p__control_16x9__45s.mp4</span>duration sweep - 45s of a 240s asset (18.7% coverage), framing held at control_16x9<span class="tgt">expect: Heat_vs_Raptors_20261003_00-02-00_00-06-00_720p.mp4  (18.75% of asset)</span></div>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/L_Heat_vs_Raptors_20261003_720p__control_16x9__60s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">L_Heat_vs_Raptors_20261003_720p__control_16x9__60s.mp4</span>duration sweep - 60s of a 240s asset (25.0% coverage), framing held at control_16x9<span class="tgt">expect: Heat_vs_Raptors_20261003_00-02-00_00-06-00_720p.mp4  (25.0% of asset)</span></div>
         </div>
     </div>
 <h2>Jazz vs Nuggets (3)</h2>
@@ -125,7 +167,7 @@ ul.idx { max-width: 1280px; margin: 0 auto 30px; padding: 0 20px; line-height: 1
             <div class="caption"><span class="name">Jazz_vs_Nuggets_20261004_720p__crop_1x1.mp4</span>1:1 square crop<span class="tgt">expect: Jazz_vs_Nuggets_20261004_00-02-00_00-06-00_720p.mp4  (6.25% of asset)</span></div>
         </div>
     </div>
-<h2>Knicks vs 76ers (4)</h2>
+<h2>Knicks vs 76ers (8)</h2>
     <div class="video-grid">
         <div class="video-container">
             <video controls>
@@ -155,8 +197,36 @@ ul.idx { max-width: 1280px; margin: 0 auto 30px; padding: 0 20px; line-height: 1
             </video>
             <div class="caption"><span class="name">BR_JaylenBrown_22pts__real_bleacher.mp4</span>real Bleacher Report edit of the same game<span class="unk">real Bleacher edit - graded partial - expect match: yes</span></div>
         </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/L_Knicks_vs_76ers_20261005_1080p__vcrop_center__20s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">L_Knicks_vs_76ers_20261005_1080p__vcrop_center__20s.mp4</span>duration sweep - 20s of a 240s asset (8.3% coverage), framing held at vcrop_center<span class="tgt">expect: Knicks_vs_76ers_20261005_00-02-00_00-06-00_1080p.mp4  (8.33% of asset)</span></div>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/L_Knicks_vs_76ers_20261005_1080p__vcrop_center__30s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">L_Knicks_vs_76ers_20261005_1080p__vcrop_center__30s.mp4</span>duration sweep - 30s of a 240s asset (12.5% coverage), framing held at vcrop_center<span class="tgt">expect: Knicks_vs_76ers_20261005_00-02-00_00-06-00_1080p.mp4  (12.5% of asset)</span></div>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/L_Knicks_vs_76ers_20261005_1080p__vcrop_center__45s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">L_Knicks_vs_76ers_20261005_1080p__vcrop_center__45s.mp4</span>duration sweep - 45s of a 240s asset (18.7% coverage), framing held at vcrop_center<span class="tgt">expect: Knicks_vs_76ers_20261005_00-02-00_00-06-00_1080p.mp4  (18.75% of asset)</span></div>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/L_Knicks_vs_76ers_20261005_1080p__vcrop_center__60s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">L_Knicks_vs_76ers_20261005_1080p__vcrop_center__60s.mp4</span>duration sweep - 60s of a 240s asset (25.0% coverage), framing held at vcrop_center<span class="tgt">expect: Knicks_vs_76ers_20261005_00-02-00_00-06-00_1080p.mp4  (25.0% of asset)</span></div>
+        </div>
     </div>
-<h2>Lakers vs Bulls (3)</h2>
+<h2>Lakers vs Bulls (5)</h2>
     <div class="video-grid">
         <div class="video-container">
             <video controls>
@@ -178,6 +248,20 @@ ul.idx { max-width: 1280px; margin: 0 auto 30px; padding: 0 20px; line-height: 1
                 Your browser does not support the video tag.
             </video>
             <div class="caption"><span class="name">Lakers_vs_Bulls_20260716_720p__vcrop_lowbitrate.mp4</span>9:16 at 400 kbps<span class="tgt">expect: Lakers_vs_Bulls_20260716_00-02-00_00-06-00_720p.mp4  (6.25% of asset)</span></div>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/G30_Lakers_vs_Bulls_20260716_720p__vcrop_zoom13__30s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">G30_Lakers_vs_Bulls_20260716_720p__vcrop_zoom13__30s.mp4</span>geometry at a fixed 30s (12.5% coverage) - comparable across framings<span class="tgt">expect: Lakers_vs_Bulls_20260716_00-02-00_00-06-00_720p.mp4  (12.5% of asset)</span></div>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/XC_Lakers_vs_Bulls_20260716__outside_chunk.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">XC_Lakers_vs_Bulls_20260716__outside_chunk.mp4</span>same game and same source reel, but cut from 400-420s - OUTSIDE the 120-360s window the asset holds<span class="neg">expect:   (8.33% of asset)</span></div>
         </div>
     </div>
 <h2>Lakers vs Cavaliers (3)</h2>
@@ -204,7 +288,7 @@ ul.idx { max-width: 1280px; margin: 0 auto 30px; padding: 0 20px; line-height: 1
             <div class="caption"><span class="name">Lakers_vs_Cavaliers_20260331_1080p__vcrop_center.mp4</span>9:16 centre crop<span class="tgt">expect: Lakers_vs_Cavaliers_20260331_00-02-00_00-06-00_1080p.mp4  (3.33% of asset)</span></div>
         </div>
     </div>
-<h2>Lakers vs Kings (4)</h2>
+<h2>Lakers vs Kings (8)</h2>
     <div class="video-grid">
         <div class="video-container">
             <video controls>
@@ -234,8 +318,36 @@ ul.idx { max-width: 1280px; margin: 0 auto 30px; padding: 0 20px; line-height: 1
             </video>
             <div class="caption"><span class="name">BR_Luka_21pts__real_bleacher.mp4</span>real Bleacher Report edit of the same game<span class="unk">real Bleacher edit - graded overlap - expect match: yes</span></div>
         </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/L_Lakers_vs_Kings_20261005_720p__vcrop_center__20s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">L_Lakers_vs_Kings_20261005_720p__vcrop_center__20s.mp4</span>duration sweep - 20s of a 240s asset (8.3% coverage), framing held at vcrop_center<span class="tgt">expect: Lakers_vs_Kings_20261005_00-02-00_00-06-00_720p.mp4  (8.33% of asset)</span></div>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/L_Lakers_vs_Kings_20261005_720p__vcrop_center__30s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">L_Lakers_vs_Kings_20261005_720p__vcrop_center__30s.mp4</span>duration sweep - 30s of a 240s asset (12.5% coverage), framing held at vcrop_center<span class="tgt">expect: Lakers_vs_Kings_20261005_00-02-00_00-06-00_720p.mp4  (12.5% of asset)</span></div>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/L_Lakers_vs_Kings_20261005_720p__vcrop_center__45s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">L_Lakers_vs_Kings_20261005_720p__vcrop_center__45s.mp4</span>duration sweep - 45s of a 240s asset (18.7% coverage), framing held at vcrop_center<span class="tgt">expect: Lakers_vs_Kings_20261005_00-02-00_00-06-00_720p.mp4  (18.75% of asset)</span></div>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/L_Lakers_vs_Kings_20261005_720p__vcrop_center__60s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">L_Lakers_vs_Kings_20261005_720p__vcrop_center__60s.mp4</span>duration sweep - 60s of a 240s asset (25.0% coverage), framing held at vcrop_center<span class="tgt">expect: Lakers_vs_Kings_20261005_00-02-00_00-06-00_720p.mp4  (25.0% of asset)</span></div>
+        </div>
     </div>
-<h2>Pistons vs Suns (3)</h2>
+<h2>Pistons vs Suns (5)</h2>
     <div class="video-grid">
         <div class="video-container">
             <video controls>
@@ -258,8 +370,22 @@ ul.idx { max-width: 1280px; margin: 0 auto 30px; padding: 0 20px; line-height: 1
             </video>
             <div class="caption"><span class="name">Pistons_vs_Suns_20261005_720p__vcrop_center.mp4</span>9:16 centre crop<span class="tgt">expect: Pistons_vs_Suns_20261005_00-02-00_00-06-00_720p.mp4  (5.0% of asset)</span></div>
         </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/G30_Pistons_vs_Suns_20261005_720p__crop_4x5__30s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">G30_Pistons_vs_Suns_20261005_720p__crop_4x5__30s.mp4</span>geometry at a fixed 30s (12.5% coverage) - comparable across framings<span class="tgt">expect: Pistons_vs_Suns_20261005_00-02-00_00-06-00_720p.mp4  (12.5% of asset)</span></div>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/XC_Pistons_vs_Suns_20261005__outside_chunk.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">XC_Pistons_vs_Suns_20261005__outside_chunk.mp4</span>same game and same source reel, but cut from 400-420s - OUTSIDE the 120-360s window the asset holds<span class="neg">expect:   (8.33% of asset)</span></div>
+        </div>
     </div>
-<h2>Spurs vs Celtics (3)</h2>
+<h2>Spurs vs Celtics (4)</h2>
     <div class="video-grid">
         <div class="video-container">
             <video controls>
@@ -282,8 +408,15 @@ ul.idx { max-width: 1280px; margin: 0 auto 30px; padding: 0 20px; line-height: 1
             </video>
             <div class="caption"><span class="name">Spurs_vs_Celtics_20260310_1080p__vcrop_speed115.mp4</span>9:16 at 1.15x speed<span class="tgt">expect: Spurs_vs_Celtics_20260310_00-02-00_00-06-00_1080p.mp4  (6.25% of asset)</span></div>
         </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/G30_Spurs_vs_Celtics_20260310_1080p__vcrop_mirror__30s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">G30_Spurs_vs_Celtics_20260310_1080p__vcrop_mirror__30s.mp4</span>geometry at a fixed 30s (12.5% coverage) - comparable across framings<span class="tgt">expect: Spurs_vs_Celtics_20260310_00-02-00_00-06-00_1080p.mp4  (12.5% of asset)</span></div>
+        </div>
     </div>
-<h2>Spurs vs Knicks (3)</h2>
+<h2>Spurs vs Knicks (7)</h2>
     <div class="video-grid">
         <div class="video-container">
             <video controls>
@@ -306,8 +439,36 @@ ul.idx { max-width: 1280px; margin: 0 auto 30px; padding: 0 20px; line-height: 1
             </video>
             <div class="caption"><span class="name">Spurs_vs_Knicks_20260301_1080p__crop_4x5.mp4</span>4:5 Instagram feed crop<span class="tgt">expect: Spurs_vs_Knicks_20260301_00-02-00_00-06-00_1080p.mp4  (4.17% of asset)</span></div>
         </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/L_Spurs_vs_Knicks_20260301_1080p__control_16x9__20s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">L_Spurs_vs_Knicks_20260301_1080p__control_16x9__20s.mp4</span>duration sweep - 20s of a 240s asset (8.3% coverage), framing held at control_16x9<span class="tgt">expect: Spurs_vs_Knicks_20260301_00-02-00_00-06-00_1080p.mp4  (8.33% of asset)</span></div>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/L_Spurs_vs_Knicks_20260301_1080p__control_16x9__30s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">L_Spurs_vs_Knicks_20260301_1080p__control_16x9__30s.mp4</span>duration sweep - 30s of a 240s asset (12.5% coverage), framing held at control_16x9<span class="tgt">expect: Spurs_vs_Knicks_20260301_00-02-00_00-06-00_1080p.mp4  (12.5% of asset)</span></div>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/L_Spurs_vs_Knicks_20260301_1080p__control_16x9__45s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">L_Spurs_vs_Knicks_20260301_1080p__control_16x9__45s.mp4</span>duration sweep - 45s of a 240s asset (18.7% coverage), framing held at control_16x9<span class="tgt">expect: Spurs_vs_Knicks_20260301_00-02-00_00-06-00_1080p.mp4  (18.75% of asset)</span></div>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/L_Spurs_vs_Knicks_20260301_1080p__control_16x9__60s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">L_Spurs_vs_Knicks_20260301_1080p__control_16x9__60s.mp4</span>duration sweep - 60s of a 240s asset (25.0% coverage), framing held at control_16x9<span class="tgt">expect: Spurs_vs_Knicks_20260301_00-02-00_00-06-00_1080p.mp4  (25.0% of asset)</span></div>
+        </div>
     </div>
-<h2>Thunder vs Celtics (3)</h2>
+<h2>Thunder vs Celtics (4)</h2>
     <div class="video-grid">
         <div class="video-container">
             <video controls>
@@ -330,8 +491,15 @@ ul.idx { max-width: 1280px; margin: 0 auto 30px; padding: 0 20px; line-height: 1
             </video>
             <div class="caption"><span class="name">Thunder_vs_Celtics_20260325_720p__vcrop_speed115.mp4</span>9:16 at 1.15x speed<span class="tgt">expect: Thunder_vs_Celtics_20260325_00-02-00_00-06-00_720p.mp4  (6.25% of asset)</span></div>
         </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/XC_Thunder_vs_Celtics_20260325__outside_chunk.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">XC_Thunder_vs_Celtics_20260325__outside_chunk.mp4</span>same game and same source reel, but cut from 400-420s - OUTSIDE the 120-360s window the asset holds<span class="neg">expect:   (8.33% of asset)</span></div>
+        </div>
     </div>
-<h2>Thunder vs Warriors (3)</h2>
+<h2>Thunder vs Warriors (4)</h2>
     <div class="video-grid">
         <div class="video-container">
             <video controls>
@@ -354,8 +522,15 @@ ul.idx { max-width: 1280px; margin: 0 auto 30px; padding: 0 20px; line-height: 1
             </video>
             <div class="caption"><span class="name">Thunder_vs_Warriors_20260712_720p__crop84.mp4</span>84% crop, aspect kept (control)<span class="tgt">expect: Thunder_vs_Warriors_20260712_00-02-00_00-06-00_720p.mp4  (4.17% of asset)</span></div>
         </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/G30_Thunder_vs_Warriors_20260712_720p__vcrop_center__30s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">G30_Thunder_vs_Warriors_20260712_720p__vcrop_center__30s.mp4</span>geometry at a fixed 30s (12.5% coverage) - comparable across framings<span class="tgt">expect: Thunder_vs_Warriors_20260712_00-02-00_00-06-00_720p.mp4  (12.5% of asset)</span></div>
+        </div>
     </div>
-<h2>Timberwolves vs Bucks (4)</h2>
+<h2>Timberwolves vs Bucks (5)</h2>
     <div class="video-grid">
         <div class="video-container">
             <video controls>
@@ -385,8 +560,15 @@ ul.idx { max-width: 1280px; margin: 0 auto 30px; padding: 0 20px; line-height: 1
             </video>
             <div class="caption"><span class="name">BR_LaMelo_debut__real_bleacher.mp4</span>real Bleacher Report edit of the same game<span class="unk">real Bleacher edit - graded partial - expect match: yes</span></div>
         </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/G30_Timberwolves_vs_Bucks_20261005_720p__vcrop_caption__30s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">G30_Timberwolves_vs_Bucks_20261005_720p__vcrop_caption__30s.mp4</span>geometry at a fixed 30s (12.5% coverage) - comparable across framings<span class="tgt">expect: Timberwolves_vs_Bucks_20261005_00-02-00_00-06-00_720p.mp4  (12.5% of asset)</span></div>
+        </div>
     </div>
-<h2>Warriors vs Clippers (3)</h2>
+<h2>Warriors vs Clippers (4)</h2>
     <div class="video-grid">
         <div class="video-container">
             <video controls>
@@ -409,8 +591,15 @@ ul.idx { max-width: 1280px; margin: 0 auto 30px; padding: 0 20px; line-height: 1
             </video>
             <div class="caption"><span class="name">Warriors_vs_Clippers_20261004_1080p__vpad_blur.mp4</span>16:9 padded into 9:16, blurred fill<span class="tgt">expect: Warriors_vs_Clippers_20261004_00-02-00_00-06-00_1080p.mp4  (2.5% of asset)</span></div>
         </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/G30_Warriors_vs_Clippers_20261004_1080p__crop_1x1__30s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">G30_Warriors_vs_Clippers_20261004_1080p__crop_1x1__30s.mp4</span>geometry at a fixed 30s (12.5% coverage) - comparable across framings<span class="tgt">expect: Warriors_vs_Clippers_20261004_00-02-00_00-06-00_1080p.mp4  (12.5% of asset)</span></div>
+        </div>
     </div>
-<h2>Warriors vs Grizzlies (3)</h2>
+<h2>Warriors vs Grizzlies (7)</h2>
     <div class="video-grid">
         <div class="video-container">
             <video controls>
@@ -433,8 +622,36 @@ ul.idx { max-width: 1280px; margin: 0 auto 30px; padding: 0 20px; line-height: 1
             </video>
             <div class="caption"><span class="name">Warriors_vs_Grizzlies_20260719_1080p__crop_1x1.mp4</span>1:1 square crop<span class="tgt">expect: Warriors_vs_Grizzlies_20260719_00-02-00_00-06-00_1080p.mp4  (3.33% of asset)</span></div>
         </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/L_Warriors_vs_Grizzlies_20260719_1080p__vcrop_center__20s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">L_Warriors_vs_Grizzlies_20260719_1080p__vcrop_center__20s.mp4</span>duration sweep - 20s of a 240s asset (8.3% coverage), framing held at vcrop_center<span class="tgt">expect: Warriors_vs_Grizzlies_20260719_00-02-00_00-06-00_1080p.mp4  (8.33% of asset)</span></div>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/L_Warriors_vs_Grizzlies_20260719_1080p__vcrop_center__30s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">L_Warriors_vs_Grizzlies_20260719_1080p__vcrop_center__30s.mp4</span>duration sweep - 30s of a 240s asset (12.5% coverage), framing held at vcrop_center<span class="tgt">expect: Warriors_vs_Grizzlies_20260719_00-02-00_00-06-00_1080p.mp4  (12.5% of asset)</span></div>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/L_Warriors_vs_Grizzlies_20260719_1080p__vcrop_center__45s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">L_Warriors_vs_Grizzlies_20260719_1080p__vcrop_center__45s.mp4</span>duration sweep - 45s of a 240s asset (18.7% coverage), framing held at vcrop_center<span class="tgt">expect: Warriors_vs_Grizzlies_20260719_00-02-00_00-06-00_1080p.mp4  (18.75% of asset)</span></div>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/L_Warriors_vs_Grizzlies_20260719_1080p__vcrop_center__60s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">L_Warriors_vs_Grizzlies_20260719_1080p__vcrop_center__60s.mp4</span>duration sweep - 60s of a 240s asset (25.0% coverage), framing held at vcrop_center<span class="tgt">expect: Warriors_vs_Grizzlies_20260719_00-02-00_00-06-00_1080p.mp4  (25.0% of asset)</span></div>
+        </div>
     </div>
-<h2>Warriors vs Lakers (3)</h2>
+<h2>Warriors vs Lakers (5)</h2>
     <div class="video-grid">
         <div class="video-container">
             <video controls>
@@ -457,8 +674,22 @@ ul.idx { max-width: 1280px; margin: 0 auto 30px; padding: 0 20px; line-height: 1
             </video>
             <div class="caption"><span class="name">Warriors_vs_Lakers_20260718_1080p__vcrop_speed115.mp4</span>9:16 at 1.15x speed<span class="tgt">expect: Warriors_vs_Lakers_20260718_00-02-00_00-06-00_1080p.mp4  (3.33% of asset)</span></div>
         </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/G30_Warriors_vs_Lakers_20260718_1080p__vcrop_track__30s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">G30_Warriors_vs_Lakers_20260718_1080p__vcrop_track__30s.mp4</span>geometry at a fixed 30s (12.5% coverage) - comparable across framings<span class="tgt">expect: Warriors_vs_Lakers_20260718_00-02-00_00-06-00_1080p.mp4  (12.5% of asset)</span></div>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/XC_Warriors_vs_Lakers_20260718__outside_chunk.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">XC_Warriors_vs_Lakers_20260718__outside_chunk.mp4</span>same game and same source reel, but cut from 400-420s - OUTSIDE the 120-360s window the asset holds<span class="neg">expect:   (8.33% of asset)</span></div>
+        </div>
     </div>
-<h2>Warriors vs Rockets (3)</h2>
+<h2>Warriors vs Rockets (4)</h2>
     <div class="video-grid">
         <div class="video-container">
             <video controls>
@@ -480,6 +711,13 @@ ul.idx { max-width: 1280px; margin: 0 auto 30px; padding: 0 20px; line-height: 1
                 Your browser does not support the video tag.
             </video>
             <div class="caption"><span class="name">Warriors_vs_Rockets_20260305_1080p__vcrop_grade.mp4</span>9:16 + saturated grade<span class="tgt">expect: Warriors_vs_Rockets_20260305_00-02-00_00-06-00_1080p.mp4  (2.5% of asset)</span></div>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/NBA/Edits/G30_Warriors_vs_Rockets_20260305_1080p__vpad_blur__30s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption"><span class="name">G30_Warriors_vs_Rockets_20260305_1080p__vpad_blur__30s.mp4</span>geometry at a fixed 30s (12.5% coverage) - comparable across framings<span class="tgt">expect: Warriors_vs_Rockets_20260305_00-02-00_00-06-00_1080p.mp4  (12.5% of asset)</span></div>
         </div>
     </div>
 <h2>unpaired (7)</h2>
