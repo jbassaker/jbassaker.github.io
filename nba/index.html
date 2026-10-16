@@ -27,10 +27,12 @@ ul.idx { max-width: 1280px; margin: 0 auto 30px; padding: 0 20px; line-height: 1
 </head>
 <body>
 <h1>NBA Vertical-Crop Test Set</h1>
-<p class="sub">Crawl entry point. Tenant NBA1.</p>
+<p class="sub">Crawl entry point for BOTH corpora - one indexing run covers everything linked below.</p>
 <ul class="idx">
-    <li><a href="edits.html">NBA vertical social edits</a> - 98 videos across 18 games</li>
+    <li><a href="edits.html">Generated NBA vertical social edits</a> - 98 videos across 18 games</li>
+    <li><a href="../nba-real/index.html">Real Bleacher Report NBA edits</a> - 67 videos across 9 games (55 real social posts + 12 decoys)</li>
 </ul>
-<p class="note">Assets: 18 game chunks (8 x 1080p, 10 x 720p), uploaded directly to the NBA1 tenant and deliberately not hosted here - only the edits are crawlable site content.</p>
+<p class="note">Assets: 18 generated game chunks (8 x 1080p, 10 x 720p) plus 18 real-game 5-minute chunks, uploaded directly to the tenant and deliberately not hosted here - only the edits are crawlable site content.</p>
+<p class="note">Containment: these two index pages are the only pages with links, and each points only at its own edits page and at the other index. Neither edits page contains a single &lt;a&gt; tag. Starting a crawl here therefore reaches exactly four pages - /nba/index.html, /nba/edits.html, /nba-real/index.html, /nba-real/edits.html - and cannot reach the unrelated videos at the site root.</p>
 </body>
 </html>
