@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DinoV3 Stage Patch Verification - Isolated Sample</title>
+<style>
+ body{font-family:Roboto,system-ui,sans-serif;margin:0;background:#f4f4f9;color:#333}
+ h1{font-size:1.7rem;text-align:center;margin:22px 0 6px}
+ h2{text-align:center;font-size:1.15rem;font-weight:400;color:#555;margin:26px 0 10px}
+ .note{max-width:900px;margin:0 auto 18px;padding:12px 16px;background:#fff;
+       border-left:4px solid #c00;border-radius:6px;font-size:.9rem;line-height:1.5}
+ .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+       gap:15px;padding:20px;max-width:1200px;margin:auto}
+ .card{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.1)}
+ .card video,.card img{width:100%;display:block;background:#000}
+ .card img{background:#fff;object-fit:contain;max-height:280px}
+ .cap{padding:8px 10px;font-size:.78rem;word-break:break-all;line-height:1.35}
+ .exp{display:inline-block;margin-top:4px;padding:2px 7px;border-radius:3px;
+      font-size:.72rem;font-weight:600;color:#fff}
+ .m{background:#1a7f37}.n{background:#b42318}.p{background:#b54708}
+</style>
+</head>
+<body>
+<h1>DinoV3 Stage Patch Verification</h1>
+<div class="note">
+<b>Isolated crawl sample.</b> This page exists only to verify the DinoV3 patch on RC Stage.
+It links <b>9 video clips</b> and <b>12 images</b> and nothing else &mdash; there are deliberately
+no navigation links to any other page on this site, so a crawler pointed here cannot reach the
+wider test corpus (700+ videos). Point the indexing site at this exact URL.
+<br><br>Generated 2026-10-28.
+</div>
+<h2>Videos &mdash; 9 clips</h2>
+<div class="grid">
+<div class="card">
+<video controls preload="metadata">
+<source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/Stage-Bleacher/Timberwolves_vs_Bucks_20261005_720p__control_16x9.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<div class="cap">Timberwolves_vs_Bucks_20261005_720p__control_16x9.mp4<br><span class="exp m">must MATCH</span></div>
+</div>
+<div class="card">
+<video controls preload="metadata">
+<source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/Stage-Bleacher/Warriors_vs_Rockets_20260305_1080p__vcrop_center.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<div class="cap">Warriors_vs_Rockets_20260305_1080p__vcrop_center.mp4<br><span class="exp m">must MATCH</span></div>
+</div>
+<div class="card">
+<video controls preload="metadata">
+<source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/Stage-Bleacher/Pistons_vs_Suns_20261005_720p__vcrop_center.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<div class="cap">Pistons_vs_Suns_20261005_720p__vcrop_center.mp4<br><span class="exp m">must MATCH</span></div>
+</div>
+<div class="card">
+<video controls preload="metadata">
+<source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/Stage-Bleacher/Thunder_vs_Warriors_20260712_720p__crop_4x5.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<div class="cap">Thunder_vs_Warriors_20260712_720p__crop_4x5.mp4<br><span class="exp m">must MATCH</span></div>
+</div>
+<div class="card">
+<video controls preload="metadata">
+<source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/Stage-Bleacher/Warriors_vs_Rockets_20260305_1080p__vcrop_grade.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<div class="cap">Warriors_vs_Rockets_20260305_1080p__vcrop_grade.mp4<br><span class="exp p">expected MISS</span></div>
+</div>
+<div class="card">
+<video controls preload="metadata">
+<source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/Stage-Bleacher/Timberwolves_vs_Bucks_20261005_720p__vcrop_caption.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<div class="cap">Timberwolves_vs_Bucks_20261005_720p__vcrop_caption.mp4<br><span class="exp p">expected MISS</span></div>
+</div>
+<div class="card">
+<video controls preload="metadata">
+<source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/Stage-Bleacher/NEG_hard_Lakers_vs_Timberwolves_20260310__vcrop_center.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<div class="cap">NEG_hard_Lakers_vs_Timberwolves_20260310__vcrop_center.mp4<br><span class="exp n">must NOT match</span></div>
+</div>
+<div class="card">
+<video controls preload="metadata">
+<source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/Stage-Bleacher/NEG_hard_Clippers_vs_Pacers_20260304__vcrop_center.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<div class="cap">NEG_hard_Clippers_vs_Pacers_20260304__vcrop_center.mp4<br><span class="exp n">must NOT match</span></div>
+</div>
+<div class="card">
+<video controls preload="metadata">
+<source src="https://pub-997686727686450ea19781bb150dc2a9.r2.dev/Stage-Bleacher/NEG_hard_Bucks_vs_Jazz_20260307__vcrop_center.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<div class="cap">NEG_hard_Bucks_vs_Jazz_20260307__vcrop_center.mp4<br><span class="exp n">must NOT match</span></div>
+</div>
+</div>
+<h2>Images &mdash; 12 crawled samples</h2>
+<div class="grid">
+<div class="card">
+<img src="img/imgi_450_bestsellers_mobile_nav_2.jpg" alt="imgi_450_bestsellers_mobile_nav_2.jpg" loading="lazy">
+<div class="cap">imgi_450_bestsellers_mobile_nav_2.jpg<br><span class="exp m">must MATCH</span></div>
+</div>
+<div class="card">
+<img src="img/imgi_48_redken-all-soft-argan-oil-softening-shampoo-for-dry-hair.jpg" alt="imgi_48_redken-all-soft-argan-oil-softening-shampoo-for-dry-hair.jpg" loading="lazy">
+<div class="cap">imgi_48_redken-all-soft-argan-oil-softening-shampoo-for-dry-hair.jpg<br><span class="exp m">must MATCH</span></div>
+</div>
+<div class="card">
+<img src="img/imgi_444_hair_quiz_mobile_nav.jpg" alt="imgi_444_hair_quiz_mobile_nav.jpg" loading="lazy">
+<div class="cap">imgi_444_hair_quiz_mobile_nav.jpg<br><span class="exp m">must MATCH</span></div>
+</div>
+<div class="card">
+<img src="img/imgi_102_RK%20US%20DTC%20June%20-%206.1%20All%20Soft%20Mask%20Launch_2000x2000_Bundle_02.jpg" alt="imgi_102_RK US DTC June - 6.1 All Soft Mask Launch_2000x2000_Bundle_02.jpg" loading="lazy">
+<div class="cap">imgi_102_RK US DTC June - 6.1 All Soft Mask Launch_2000x2000_Bundle_02.jpg<br><span class="exp m">must MATCH</span></div>
+</div>
+<div class="card">
+<img src="img/imgi_35_HP-2025-Product-Carousel-Mobile-350x300-Shampoo-Conditioners.jpg" alt="imgi_35_HP-2025-Product-Carousel-Mobile-350x300-Shampoo-Conditioners.jpg" loading="lazy">
+<div class="cap">imgi_35_HP-2025-Product-Carousel-Mobile-350x300-Shampoo-Conditioners.jpg<br><span class="exp m">must MATCH</span></div>
+</div>
+<div class="card">
+<img src="img/imgi_31_HP-2025-Concern-Carousel-Mobile-350x300-Frizzy.jpg" alt="imgi_31_HP-2025-Concern-Carousel-Mobile-350x300-Frizzy.jpg" loading="lazy">
+<div class="cap">imgi_31_HP-2025-Concern-Carousel-Mobile-350x300-Frizzy.jpg<br><span class="exp m">must MATCH</span></div>
+</div>
+<div class="card">
+<img src="img/imgi_5_haircare_mobile_nav2.jpg" alt="imgi_5_haircare_mobile_nav2.jpg" loading="lazy">
+<div class="cap">imgi_5_haircare_mobile_nav2.jpg<br><span class="exp m">must MATCH</span></div>
+</div>
+<div class="card">
+<img src="img/imgi_985_0RB4348D__601_8G__STD__shad__qt.png" alt="imgi_985_0RB4348D__601_8G__STD__shad__qt.png" loading="lazy">
+<div class="cap">imgi_985_0RB4348D__601_8G__STD__shad__qt.png<br><span class="exp n">must NOT match</span></div>
+</div>
+<div class="card">
+<img src="img/imgi_54_AIR%2BMAX%2BTL%2B2.5.png" alt="imgi_54_AIR+MAX+TL+2.5.png" loading="lazy">
+<div class="cap">imgi_54_AIR+MAX+TL+2.5.png<br><span class="exp n">must NOT match</span></div>
+</div>
+<div class="card">
+<img src="img/imgi_866_0RB3625__92023F__STD__shad__qt.png" alt="imgi_866_0RB3625__92023F__STD__shad__qt.png" loading="lazy">
+<div class="cap">imgi_866_0RB3625__92023F__STD__shad__qt.png<br><span class="exp n">must NOT match</span></div>
+</div>
+<div class="card">
+<img src="img/imgi_815_0RB2140__661313__STD__shad__qt.png" alt="imgi_815_0RB2140__661313__STD__shad__qt.png" loading="lazy">
+<div class="cap">imgi_815_0RB2140__661313__STD__shad__qt.png<br><span class="exp p">policy: colourway</span></div>
+</div>
+<div class="card">
+<img src="img/imgi_661_0RB3548N__001_Z2__STD__shad__qt.png" alt="imgi_661_0RB3548N__001_Z2__STD__shad__qt.png" loading="lazy">
+<div class="cap">imgi_661_0RB3548N__001_Z2__STD__shad__qt.png<br><span class="exp n">must NOT match</span></div>
+</div>
+</div>
+</body>
+</html>
